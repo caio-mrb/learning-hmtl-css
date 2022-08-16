@@ -4,9 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>learning html & css</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    
+    <div class="hero-img"></div>
+    <div class="wrapper">
+        <header>
+            <!-- Logo Here (The # can be replaced by a website, usually the homepage) -->
+            <a href="#" class="logo">Shoe<span>Brand</span></a>
+            
+            <nav>
+                <svg  class="close" fill="black" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+                
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sneakers</a></li>
+                    <li><a href="#">Players</a></li>
+                </ul>
+
+                
+            </nav>
+
+                <svg class="menu" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 18H3V16H12V18ZM21 13H3V11H21V13ZM21 8H12V6H21V8Z" fill="white"></path>
+                </svg>
+        </header>
+
+        <section class="hero">
+            <h1>Regain your confidence on the court.</h1>
+
+            <p class="subhead">A shoe built with purpose and to take your game to the next level.</p>
+
+            <svg class="arrow-down" fill="black" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+            </svg>
+        </section>
+
+        <section class="more-info">
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam qui soluta dolores asperiores aliquam culpa ratione quae, aut eligendi eos voluptatibus dolore, fugit officiis temporibus quos praesentium nulla repellat maxime?</p>
+                </div>
+                <img src="images/Brown Shoes.jpg" alt="Brown Shoe">
+            </div>
+            <div class="feature left">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam qui soluta dolores asperiores aliquam culpa ratione quae, aut eligendi eos voluptatibus dolore, fugit officiis temporibus quos praesentium nulla repellat maxime?</p>
+                </div>
+                <img src="images/Pink Shoes.jpg" alt="Brown Shoe">
+            </div>
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam qui soluta dolores asperiores aliquam culpa ratione quae, aut eligendi eos voluptatibus dolore, fugit officiis temporibus quos praesentium nulla repellat maxime?</p>
+                </div>
+                <img src="images/White Shoes.jpg" alt="Brown Shoe">
+            </div>
+        </section>
+    </div>
+
+    <script>
+        const menu = document.querySelector('.menu')
+        const close = document.querySelector('.close')
+        const nav = document.querySelector('nav')
+        
+        menu.addEventListener('click', () =>{
+            nav.classList.add('open-nav')
+        },
+        close.addEventListener('click', () =>{
+            nav.classList.remove('open-nav')
+
+        })
+        )
+        
+    </script>
 </body>
 </html>
